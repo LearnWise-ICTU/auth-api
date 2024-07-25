@@ -10,3 +10,13 @@ fastapi-versioning
 beanie
 pytest
 httpx
+
+asgi_lifespan
+mongomock
+mongomock-motor
+pytest-asyncio
+black
+passlib[bcrypt]
+fastapi-mail
+Jinja2
+mailtrap

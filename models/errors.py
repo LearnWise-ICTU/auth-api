@@ -1,12 +1,15 @@
 from pydantic import BaseModel
 
+
 class HTTPError(BaseModel):
     detail: str
+
 
 class ValidationError(BaseModel):
     loc: list
     msg: str
     type: str
+
 
 class ErrorResponse(BaseModel):
     error: str
@@ -20,8 +23,8 @@ class ErrorResponse(BaseModel):
                     {
                         "loc": ["body", "title"],
                         "msg": "Field required",
-                        "type": "value_error.missing"
+                        "type": "value_error.missing",
                     }
-                ]
+                ],
             }
         }
